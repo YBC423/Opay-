@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#1b1b1b" />
+  <title>Wallet Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="profile">
+        <div class="avatar" aria-label="Profile picture">
+          <span>DJ</span>
+          <b class="rank">3</b>
+        </div>
+        <span class="greeting">Hi,DJ 6ixe</span>
+      </div>
+      <div class="top-actions">
+        <button class="icon-button support" aria-label="Support">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 25v-5a16 16 0 0 1 32 0v5M8 24h5v11H9a5 5 0 0 1-5-5v-1a5 5 0 0 1 4-5Zm32 0h-5v11h4a5 5 0 0 0 5-5v-1a5 5 0 0 0-4-5ZM35 36c-2 4-6 6-12 6"/></svg>
+          <small>HELP</small>
+        </button>
+        <button class="icon-button scan" aria-label="Scan">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M7 17V9a2 2 0 0 1 2-2h8M31 7h8a2 2 0 0 1 2 2v8M41 31v8a2 2 0 0 1-2 2h-8M17 41H9a2 2 0 0 1-2-2v-8"/></svg>
+        </button>
+        <button class="icon-button bell" aria-label="Notifications">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 33h24l-3-5V19a9 9 0 0 0-18 0v9l-3 5Zm8 5a4 4 0 0 0 8 0"/></svg>
+          <b>99+</b>
+        </button>
+      </div>
+    </header>
+
+    <section class="balance-card">
+      <div class="balance-top">
+        <div class="balance-label">
+          <svg class="shield" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2 28 6v9c0 8-5 13-12 16C9 28 4 23 4 15V6l12-4Z"/><path class="check" d="m10 15 4 4 8-9"/></svg>
+          <span>Available Balance</span>
+          <button class="eye" aria-label="Toggle balance visibility">
+            <svg viewBox="0 0 32 32"><path d="M2 16S7 7 16 7s14 9 14 9-5 9-14 9S2 16 2 16Z"/><circle cx="16" cy="16" r="4"/></svg>
+          </button>
+        </div>
+        <button class="history">Transaction History <span>›</span></button>
+      </div>
+      <div class="balance-bottom">
+        <strong id="balance">₦0.00</strong>
+        <button class="add-money">+ Add Money</button>
+      </div>
+    </section>
+
+    <section class="transactions panel">
+      <article class="transaction">
+        <div class="interest-icon">％</div>
+        <div class="transaction-info">
+          <div class="transaction-title">Spend &amp; Save Interest</div>
+          <time>Nov 9th, 1:31:55 am</time>
+        </div>
+        <div class="transaction-amount">
+          <strong>+₦0.09</strong><span>Successful</span>
+        </div>
+      </article>
+      <article class="transaction">
+        <div class="interest-icon">％</div>
+        <div class="transaction-info">
+          <div class="transaction-title">Spend &amp; Save Interest</div>
+          <time>Nov 8th, 2:03:12 am</time>
+        </div>
+        <div class="transaction-amount">
+          <strong>+₦0.09</strong><span>Successful</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="quick-actions panel">
+      <button class="quick-action">
+        <span class="quick-icon"><svg viewBox="0 0 48 48"><path d="M8 10h32v28H8z"/><circle cx="24" cy="19" r="5"/><path d="M15 33c2-6 16-6 18 0"/></svg></span>
+        <span>To OPay</span>
+      </button>
+      <button class="quick-action">
+        <span class="quick-icon"><svg viewBox="0 0 48 48"><path d="M5 17 24 7l19 10v4H5zM9 24h6v13H9zm12 0h6v13h-6zm12 0h6v13h-6zM5 41h38"/></svg></span>
+        <span>To Bank</span>
+      </button>
+      <button class="quick-action">
+        <span class="quick-icon"><svg viewBox="0 0 48 48"><path d="M27 8h13v13M40 8 23 25M20 13H9a3 3 0 0 0-3 3v23h23a3 3 0 0 0 3-3V25"/></svg></span>
+        <span>Withdraw</span>
+      </button>
+    </section>
+
+    <section class="verification panel">
+      <div class="id-badge">🪪<i>!</i></div>
+      <div class="verification-copy">
+        <strong>Your BVN and NIN info do n...</strong>
+        <span>Click to view more details</span>
+      </div>
+      <button class="go-button">Go</button>
+    </section>
+
+    <section class="services panel">
+      <button class="service"><span class="service-icon airtime">◉</span><small class="promo">Up to 6%</small><span>Airtime</span></button>
+      <button class="service"><span class="service-icon">1₦</span><span>Data</span></button>
+      <button class="service"><span class="service-icon ball">◉</span><span>Betting</span></button>
+      <button class="service"><span class="service-icon">▷</span><span>TV</span></button>
+      <button class="service"><span class="service-icon">▣</span><span>SafeBox</span></button>
+      <button class="service"><span class="service-icon">₦</span><span>Loan</span></button>
+      <button class="service"><span class="service-icon">⚑</span><span>Invitation</span></button>
+      <button class="service"><span class="service-icon">✚</span><span>More</span></button>
+    </section>
+
+    <section class="savings-banner">
+      <strong>Save &amp; Earn More with 18% p.a.</strong>
+    </section>
+
+    <div class="floating-help" aria-hidden="true"><span>✓</span><small>Click for</small></div>
+
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <button class="nav-item active"><span class="nav-symbol">◉</span><small>Home</small></button>
+      <button class="nav-item"><span class="nav-symbol">◇</span><small>Rewards</small></button>
+      <button class="nav-item"><span class="nav-symbol">↗</span><small>Finance</small></button>
+      <button class="nav-item"><span class="nav-symbol">▱</span><small>Cards</small></button>
+      <button class="nav-item"><span class="nav-symbol me-symbol">○</span><small>Me</small><i></i></button>
+    </nav>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
